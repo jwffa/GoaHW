@@ -1,0 +1,1120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    color: #4CB992;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    z-index: 1111111;
+}
+#main{
+    margin-top:50px;
+    display: none;
+    transition: 1s;
+}
+#register-to-center{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.hide-show-div{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+}
+#account-sec{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 250px;
+    z-index: 1111111111;
+}
+.accountContainer{
+    width: 1400px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #4CB992;
+    padding: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    animation: accountAnime1 ease-in 0.6s forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 200px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+::-webkit-scrollbar-thumb {
+    
+    background-color: white;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #4cb993b2;
+}
+
+@keyframes accountAnime{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes accountAnime1{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1000px);
+    }
+}
+
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    height: 300px;
+}
+.avatar-username-balance{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.password-show{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+.email-pass-amountSpent-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.balance-username-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.i{
+    width: 80px;
+}
+.pruchase-pic-price-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 90px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+}
+.price-profile{
+    font-size: 14px;
+    color: #4CB992;
+}
+#purchase-container{
+    display: grid;
+    grid-template-columns: repeat(5, 95px);
+    gap: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.rightSide{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.your-purchases{
+    font-weight: 300;
+    color: white;
+}
+.account-amount-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+#account-password{
+    font-size: 1.4rem;
+    color: white;
+}
+#spent-amount, #spent-amount1{
+    font-size: 1.4rem;
+    color: white;
+}
+#account-username, #account-balance, #account-email{
+    font-size: 1.4rem;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+.avatarDiv{
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#show-or-hide-img{
+    cursor: pointer;
+    width: 20px;
+}
+
+
+
+#register-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer{
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.footerMainDiv{
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4CB992;
+    padding: 70px;
+}
+.enjoyFooter{
+    color: white;
+    font-size: 1.3rem;
+}
+span{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #4CB992;
+}
+
+.iconsMainDiv{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 15px;
+    border-radius: 8px; 
+}
+.iconDiv{
+    max-width: 23px;
+}
+.icon{
+    width: 100%;
+    cursor: pointer;
+}
+.payments{
+    max-width: 300px;
+}
+.paymentPic{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid #4CB992;
+    border-radius: 5px;
+    gap: 20px;
+}
+.labelMonitor{
+    font-size: 1.4rem;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#nameInp, #surnameInp, #emailInp, #passInp, #balanceInp{
+    font-family: 'Josefin Sans';
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid #4CB992;
+    border-radius: 5px;
+}
+#submitInp{
+    background-color: #4CB992;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+#submitInp:hover{
+    opacity: 0.8;
+    letter-spacing: 6px;
+}
+
+#geomarket{
+    font-size: 3em;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+
+
+/*------------------------------------------- */
+
+nav{
+    display: flex;
+    width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4CB992;
+    padding: 40px;
+}
+.nav-main-div{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #4CB992;
+}
+
+.navDiv{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navDiv a{
+    position: relative;
+    padding: 0 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+.navDiv a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    transition: 0.4s;
+}
+.navDiv a:hover::after{
+    width: 100%;
+}
+
+.container-section{
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+#aside1{
+    display: flex;
+    flex-direction: column;
+    
+}
+#aside2{
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar{
+    display: none;
+    animation: animation 1s ease forwards;
+    animation-fill-mode: forwards;
+}
+
+#sidebar1{
+    display: none;
+    animation-name: sideBarDisappear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    z-index: 11111;
+}
+.categoriesDiv{
+    display: none;
+}
+
+
+@keyframes sideBarVision{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#sale-container{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px;
+}
+#self-container div{
+    width: calc(80% - 50px);
+}
+.arrowDiv{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#text-categories-click{
+    font-size: 1.7rem;
+    color: #4CB992;
+}
+#arrowImg{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: rotate(270deg);
+}
+
+#box{
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.checkbox1{
+    accent-color: #4CB992;
+    cursor: pointer;
+}
+.checkbox1{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:#4CB992;
+    border: 1px solid #4CB992;
+    cursor: pointer;
+}
+.checkbox1:checked{
+    color: white;
+    background-color: white;
+}
+
+label{
+    color: #4CB992;
+    font-size: 1.4rem;
+}
+.checkMonitor{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card{
+    /* display: flex;
+    flex-direction: column; */
+    padding: 20px;
+    border: 2px solid #4CB992;
+    border-radius: 8px;
+    height: 460px;
+    transition: 0.6s;
+}
+.crostyDiv{
+    overflow: hidden;
+    max-width: 300px;
+}
+.crosty{
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    height: auto;
+    transition: 0.3s;
+}
+.crosty:hover{
+    transform: scale(1.3, 1.3);
+}
+.shoeName, .shoePrice1{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.decrease, .increase{
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #4CB992;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.decrease:hover{
+    background-color: #4cb99386;
+}
+.increase:hover{
+    background-color: #4cb99386;
+}
+.quantityDiv{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+}
+.steel{
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+.steel:hover{
+    transform: scale(1.3, 1.3) rotate(90deg);;
+}
+.quantityNum{
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.addToCart{
+    border: none;
+    color: #4CB992;
+    background-color: white;
+    font-size: 1.3rem;
+    height: 40px;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.addToCart:hover{
+    font-size: 1.5rem;
+}
+.addToCartDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.addedImg{
+    width: 80px;
+}
+.addedDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #4CB992;
+    margin-top: 45px;
+}
+
+.add-quantity{
+    font-size: 1.2rem;
+}
+.cost{
+    font-size: 1.2rem;
+}
+.deleteItem{
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.totalDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    border-top: 2px solid #4CB992;
+    padding-top: 20px;
+}
+#total{
+    font-size: 1.6rem;
+}
+#totalNum{
+    font-size: 1.6rem;
+}
+.totalDiv div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+#totalGel{
+    font-size: 1.2rem;
+}
+.deleteItem{
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#filter{
+    background-color: #4CB992;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#filter:hover{
+    opacity: 0.6;
+    letter-spacing: 3px;
+}
+
+#profileDiv{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #4CB992;
+    padding: 20px;
+    background-color: white;
+    max-width: 250px;
+    align-self: flex-end;
+    position: relative;
+    bottom: 42px;
+}
+.profileImg{
+    width: 30px;
+    align-self: flex-end;
+    position: relative;
+}
+.personNamePicture{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#personName{
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.balancePersonTitle{
+    font-size: 1.2rem;
+}
+#balancePersonNumber{
+    font-size: 1.2rem;
+}
+.balanceDivPerson{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#visit-profile{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#visit-profile:hover{
+    letter-spacing: 2px;
+}
+#buyButton{
+    background-color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 1px 10px;
+    border-bottom: 2px solid #4CB992;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+
+#after-buy{
+    font-size: 1.3rem;
+    display: none;
+    margin-top: 30px;
+    max-width: 240px;
+}
+
+.enjoyDivMarket{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#burgerMenu{
+    display: none;
+    cursor: pointer;
+    width: 32px;
+    margin-top: 10px;
+}
+.burgerMenuDiv{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    align-self: flex-end;
+    background-color: #4CB992;
+    padding: 15px;
+    position: relative;
+    bottom: 15px;
+    border: 2px solid white;
+}
+.burgerMenuDiv a{
+    color: white;
+    font-weight: 300;
+}
+.categoriesDiv{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    margin-top: 20px;
+}
+#cart{
+    margin-left: 15px;
+}
+
+@media (max-width: 1400px){
+    #box{
+        display: none;
+    }
+    #profileDiv{
+        z-index: 9999999;
+    }
+    .accountContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1111111;
+        padding: 20px;
+    }
+    #purchase-container{
+        grid-template-columns: repeat(5, 95px);
+    }
+
+    .nav-main-div{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    .container-section{
+        width: 100%;
+        padding: 35px;
+    }
+    #sale-container{
+        grid-template-columns: repeat(3, 250px);
+    }
+
+    #filter{
+        background-color: #4CB992;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    #filter:hover{
+        opacity: 0.6;
+        letter-spacing: 2px;
+    }
+    .footerMainDiv{
+        width: 100%;
+    }
+    #text-categories-click{
+        font-size: 1.3rem;
+    }
+    #arrowImg{
+        width: 40px;
+    }
+    .labelMonitor{
+        font-size: 1.2rem;
+    }
+    .navDiv{
+        gap: 10px;
+    }
+    .navDiv a{
+        position: relative;
+        padding: 0;
+        color: white;
+    }
+    #total{
+        font-size: 1.3rem;
+    }
+    #totalNum{
+        font-size: 1.2rem;
+    }
+    #totalGel{
+        font-size: 1.2rem;
+    }
+    #buyButton{
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
+    #sidebar{
+        width: 200px;
+    }
+    .shoeName{
+        font-size: 1.1rem;
+    }
+    .card{
+        height: 400px;
+    }
+    .decrease, .increase{
+        font-size: 22px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #4CB992;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .addToCart{
+        font-size: 18px;
+    }
+    .quantityNum{
+        font-size: 1.2rem;
+    }
+    .crostyDiv{
+        overflow: hidden;
+        max-width: 200px;
+    }
+    .logo{
+        background-color: white;
+        padding: 8px 15px;
+        border-radius: 8px;
+        color: #4CB992;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .navDiv a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .categoriesDiv{
+        display: flex;
+    }
+    .arrowDiv{
+        display: none;
+    }
+    #box{
+        display: none;
+        background-color: white;
+        padding: 20px;
+        position: absolute;
+        width: 240px;
+        border-radius: 8px;
+    }
+    .addedImg{
+        width: 70px;
+    }
+    .addedDiv{
+        margin-top: 10px;
+    }
+    #sale-container{
+        grid-template-columns: repeat(3, 190px);
+    }
+    .card{
+        height: 360px;
+    }
+    .footerMainDiv{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .enjoyFooter{
+        font-size: 14px;
+    }
+    .navDiv{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 940px){
+    #geomarket{
+        font-size: 1.8rem;
+    }
+    #box{
+        height: 270px;
+        right: 0;
+        top: 120px;
+        overflow-x: hidden;
+        overflow: scroll;
+        border: 1px solid #4CB992;
+        /* animation: animationBox ease-in 0.5s forwards;
+        animation-fill-mode: forwards; */
+    }
+    .aside-box{
+        align-self: flex-start;
+    }
+    .container-section{
+        flex-direction: column;
+        gap: 15px;
+    }
+    #sale-container{
+        grid-template-columns: repeat(3, 200px);
+        gap: 20px;
+        align-self: center;
+    }
+    #sidebar{
+        position: absolute;
+        left: 0;
+        background-color: #4CB992;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 8px;
+        top: 315px;
+    }
+    .labelMonitor{
+        color: white;
+        font-size: 15px;
+    }
+    .checkbox1{
+        width: 18px;
+        height: 18px;
+        margin-bottom: 4px;
+    }
+    .checkMonitor{
+        margin-top: 10px;
+    }
+    .checkbox1:checked{
+        border: 2px solid white;  
+    }
+    #filter{
+        padding: 0;
+    }
+    #main{
+        margin-top: -25px;
+    }
+    .navDiv{
+        width: 50%;
+    }
+    .footerMainDiv{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .enjoyDivMarket{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #after-buy{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 655px){
+    #submitInp:hover{
+        opacity: 1;
+        letter-spacing: 0px;
+    }
+    #visit-profile:hover{
+        letter-spacing: 0px;
+    }
+    .avatar-username-balance{
+        gap: 15px;
+    }
+    .leftSide{
+        gap: 10px;
+        height: 250px;
+    }
+    #purchase-container{
+        grid-template-columns: repeat(3, 95px);
+    }
+    #account-password{
+        font-size: 1.2rem;
+        color: white;
+    }
+    #spent-amount, #spent-amount1{
+        font-size: 1.2rem;
+        color: white;
+    }
+    #account-username, #account-balance, #account-email{
+        font-size: 1.2rem;
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 3px;
+    }
+
+
+
+    #sale-container{
+        grid-template-columns: repeat(2, 180px);
+        gap: 5px;
+    }
+    .card{
+        height: 340px;
+    }
+    .shoeName{
+        font-size: 1rem;
+    }
+    .shoePrice1P{
+        font-size: 1rem;
+    }
+    .addToCart:hover{
+        font-size: 18px;
+        transition: 0;
+    }
+    .decrease, .increase{
+        font-size: 18px;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: #4CB992;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .addToCart{
+        font-size: 1.1rem;
+    }
+    .navDiv{
+        display: none;
+    }
+    #burgerMenu{
+        display: block;
+    }
+    .footerMainDiv{
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(2, 70px);
+    }
+    .enjoyDivMarket{
+        grid-area: 2/ 2/ 3/ 3;
+    }
+    .payments{
+        max-width: 150px;
+        grid-area: 2/3/1/3;
+    }
+
+    .navDiv{
+        position: absolute;
+        background-color: #4CB992;
+        display: none;
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 15px;
+        right: 5.5%;
+        top: 120px;
+        gap: 20px;
+        width: 89%;
+    }
+    #box{
+        height: 200px;
+        right: 0;
+        top: 120px;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+}
+
+.navDivAnime{
+    animation: navDiv 1s ease forwards;
+    animation-fill-mode: forwards;
+}
+.navDivAnime1{
+    animation: navDiv1 1s ease forwards;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes animation {
+    from{
+        transform: translateX(-800px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes navDiv {
+    from{
+        transform: translateX(800px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes navDiv1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(800px);
+    }
+}
+
+@keyframes animation1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-800px);
+    }
+}
+
+
+@keyframes animationBox {
+    from{
+        transform: translateX(800px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes animationBox1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(800px);
+    }
+}
